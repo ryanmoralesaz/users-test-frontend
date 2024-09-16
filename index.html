@@ -1,0 +1,24 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <script src="src/dependencies/htmx.min.js"></script>
+    <script src="src/dependencies/response-targets.min.js"></script>
+  </head>
+  <body>
+    <div
+      id="hx-header"
+      hx-get="/src/components/header.html"
+      hx-trigger="load"
+      hx-swap="innerHTML"
+      hx-target="this"
+    >
+      ...loading header
+    </div>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
